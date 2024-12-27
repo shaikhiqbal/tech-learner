@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "tailwindcss": "^3.4.15"
+  },
+  "scripts": {
+    "tailwind-watch": "nodemon --watch src/index.css --exec 'npx tailwindcss -i ./src/index.css -o ./src/output.css --watch'"
+  }
+}

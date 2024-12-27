@@ -1,0 +1,424 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../index.css" />
+        <link rel="stylesheet" href="../output.css" />
+        <title>About</title>
+      </head>
+<body>
+    <header
+    class="flex border-b py-4 px-4 sm:px-10 bg-white font-sans min-h-[70px] tracking-wide relative z-50"
+  >
+    <div class="flex flex-wrap items-center gap-4 w-full max-w-6xl mx-auto">
+      <a href="#" title="" class="flex">
+        <img
+          class="w-auto h-8"
+          src="/src/assets/brand/logo-dark.png"
+          alt=""
+        />
+      </a>
+
+      <div
+        id="collapseMenu"
+        class="lg:!flex lg:flex-auto lg:ml-12 max-lg:hidden max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+      >
+        <button
+          id="toggleClose"
+          class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-3.5 h-3.5 fill-black"
+            viewBox="0 0 320.591 320.591"
+          >
+            <path
+              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+              data-original="#000000"
+            ></path>
+            <path
+              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+              data-original="#000000"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          class="lg:!flex lg:flex-auto max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+        >
+          <ul class="lg:flex lg:gap-x-8 max-lg:space-y-2">
+            <li class="mb-6 hidden max-lg:block">
+              <a href="/src/home/index.html"
+                ><img
+                  src="https://readymadeui.com/readymadeui.svg"
+                  alt="logo"
+                  class="w-36"
+                />
+              </a>
+            </li>
+            <li class="max-lg:border-b max-lg:py-3">
+              <a
+                href="/src/home/index.html"
+                class="hover:text-primary text-primary block font-bold text-[15px]"
+                >Home</a
+              >
+            </li>
+
+            <li class="max-lg:border-b max-lg:py-3">
+              <a
+                href="/src/courses/index.html"
+                class="hover:text-primary text-gray-600 block font-bold text-[15px]"
+                >Courses</a
+              >
+            </li>
+            <li class="max-lg:border-b max-lg:py-3">
+              <a
+                href="/src/about/index.html"
+                class="hover:text-primary text-gray-600 block font-bold text-[15px]"
+                >About US</a
+              >
+            </li>
+            <li class="max-lg:border-b max-lg:py-3">
+              <a
+                href="/src/contact/index.html"
+                class="hover:text-primary text-gray-600 block font-bold text-[15px]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <ul
+            class="lg:flex lg:items-center ml-auto max-lg:block lg:space-x-8"
+          >
+            <li class="max-lg:border-b max-lg:py-3 max-lg:mt-2">
+              <a
+                href="/src/home/index.html"
+                class="hover:text-primary text-gray-600 block font-bold text-[15px]"
+                >Pricing</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-l border-[#333] h-6 max-lg:hidden"></div>
+
+      <div class="flex items-center ml-auto space-x-6">
+        <button
+          class="px-4 py-2 text-sm rounded font-semibold text-white border-2 border-[#1d294f] bg-[#1d294f] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#1d294f]"
+        >
+          Start free trial
+        </button>
+
+        <button id="toggleOpen" class="lg:hidden">
+          <svg
+            class="w-7 h-7"
+            fill="#000"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+<div class="grid md:grid-cols-3 gap-6 min-h-[164px] py-8 p-16 bg-gradient-to-r from-primary-600 to-primary-50 font-sans overflow-hidden">
+    <div class="md:col-span-2">
+      <h1 class="text-3xl font-bold text-white">About Us</h1>
+      <p class="text-base text-gray-200 mt-4">A warm welcome at TechSeed Education - The process of learning,</p>
+
+      <!-- <button type="button"
+        class="py-3 px-6 text-sm font-semibold bg-white text-blue-600 hover:bg-slate-100 rounded-md mt-8">Get
+        Started</button> -->
+    </div>
+
+    <div class="relative max-md:hidden">
+      <!-- <img src="https://readymadeui.com/readymadeui_banner2.webp" alt="Banner Image"
+        class="w-full right-4 top-[-13px] md:absolute skew-x-[-16deg] rotate-2 object-cover" /> -->
+    </div>
+  </div>
+
+
+  <section class="py-14">
+    <div class="max-w-screen-xl mx-auto px-4 text-center text-gray-600 md:px-8">
+      <div class="max-w-2xl mx-auto">
+        <h3 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          The fastest way to launch a product
+        </h3>
+        <p class="mt-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          congue, nisl eget molestie varius, enim ex faucibus purus.
+        </p>
+      </div>
+      <div class="mt-12">
+        <ul class="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="space-y-3">
+            <div class="w-12 h-12 mx-auto bg-indigo-50 text-primary rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            </div>
+            <h4 class="text-lg text-gray-800 font-semibold">Fast Refresh</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+            </p>
+          </li>
+          <li class="space-y-3">
+            <div class="w-12 h-12 mx-auto bg-indigo-50 text-primary rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125-1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125-1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <h4 class="text-lg text-gray-800 font-semibold">Analytics</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+            </p>
+          </li>
+          <li class="space-y-3">
+            <div class="w-12 h-12 mx-auto bg-indigo-50 text-primary rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+            </div>
+            <h4 class="text-lg text-gray-800 font-semibold">Datacenter security</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+            </p>
+          </li>
+          <li class="space-y-3">
+            <div class="w-12 h-12 mx-auto bg-indigo-50 text-primary rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+              </svg>
+            </div>
+            <h4 class="text-lg text-gray-800 font-semibold">Build on your terms</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+            </p>
+          </li>
+          <li class="space-y-3">
+            <div class="w-12 h-12 mx-auto bg-indigo-50 text-primary rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+            </div>
+            <h4 class="text-lg text-gray-800 font-semibold">Safe to use</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+            </p>
+          </li>
+          <li class="space-y-3">
+            <div class="w-12 h-12 mx-auto bg-indigo-50 text-primary rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+              </svg>
+            </div>
+            <h4 class="text-lg text-gray-800 font-semibold">Flexible</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="py-14">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-primary font-semibold pb-6">What people are saying</h3>
+        <div id="testimonials-container">
+          <!-- Testimonial 1 -->
+          <div class="testimonial active">
+            <figure>
+              <blockquote>
+                <p class="text-gray-800 text-xl font-semibold sm:text-2xl">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem, euismod volutpat arcu volutpat et.
+                </p>
+              </blockquote>
+              <div class="mt-6">
+                <img
+                  src="https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg"
+                  alt="Martin Escobar"
+                  class="w-16 h-16 mx-auto rounded-full"
+                />
+                <div class="mt-3">
+                  <span class="block text-gray-800 font-semibold">Martin Escobar</span>
+                  <span class="block text-gray-600 text-sm mt-0.5">Founder of Meta</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial hidden">
+            <figure>
+              <blockquote>
+                <p class="text-gray-800 text-xl font-semibold sm:text-2xl">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout, that the point of using Lorem Ipsum.
+                </p>
+              </blockquote>
+              <div class="mt-6">
+                <img
+                  src="https://randomuser.me/api/portraits/women/79.jpg"
+                  alt="Angela Stian"
+                  class="w-16 h-16 mx-auto rounded-full"
+                />
+                <div class="mt-3">
+                  <span class="block text-gray-800 font-semibold">Angela Stian</span>
+                  <span class="block text-gray-600 text-sm mt-0.5">Product Designer</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial hidden">
+            <figure>
+              <blockquote>
+                <p class="text-gray-800 text-xl font-semibold sm:text-2xl">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.
+                </p>
+              </blockquote>
+              <div class="mt-6">
+                <img
+                  src="https://randomuser.me/api/portraits/men/86.jpg"
+                  alt="Karim Ahmed"
+                  class="w-16 h-16 mx-auto rounded-full"
+                />
+                <div class="mt-3">
+                  <span class="block text-gray-800 font-semibold">Karim Ahmed</span>
+                  <span class="block text-gray-600 text-sm mt-0.5">DevOp Engineer</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <div class="mt-6">
+          <ul class="flex gap-x-3 justify-center">
+            <li>
+              <button
+                class="w-2.5 h-2.5 rounded-full bg-primary-600 ring-offset-2 ring-primary focus:ring"
+                onclick="showTestimonial(0)"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="w-2.5 h-2.5 rounded-full bg-gray-300 ring-offset-2 ring-primary focus:ring"
+                onclick="showTestimonial(1)"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="w-2.5 h-2.5 rounded-full bg-gray-300 ring-offset-2 ring-primary focus:ring"
+                onclick="showTestimonial(2)"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative py-14">
+    <div class="max-w-screen-xl mx-auto text-gray-600 md:px-8">
+      <div class="relative max-w-xl space-y-3 px-4 md:px-0">
+        <h3 class="text-primary font-semibold">Basic plan</h3>
+        <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">Pay as you grow</p>
+        <div class="max-w-xl">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="mt-16 justify-between gap-8 md:flex">
+        <ul class="flex-1 max-w-md space-y-10 px-4 md:px-0">
+          <li class="flex gap-x-3">
+            <div class="flex-none w-12 h-12 rounded-full bg-indigo-50 text-primary flex items-center justify-center">
+              <!-- Replace with dynamic icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg text-gray-800 font-medium">Scalable</h4>
+              <p class="text-gray-600 mt-2 md:text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+          </li>
+          <!-- Repeat feature items -->
+        </ul>
+        <div class="flex-1 flex flex-col border-y mt-6 md:max-w-xl md:rounded-xl md:border md:border-x-none md:shadow-lg md:mt-0">
+          <div class="p-4 py-8 border-b md:p-8">
+            <div class="justify-between flex">
+              <div class="max-w-xs">
+                <span class="text-2xl text-gray-800 font-semibold">Basic plan</span>
+                <p class="mt-3 sm:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="flex-none text-gray-800 text-2xl font-semibold sm:text-3xl">
+                <span>$32</span>
+                <span class="text-xl text-gray-600 font-normal">/mo</span>
+              </div>
+            </div>
+            <button class="mt-4 px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700">
+              Get Started
+            </button>
+          </div>
+          <ul class="p-4 space-y-3 sm:grid sm:grid-cols-2 md:block md:p-8 lg:grid">
+            <div class="pb-2 col-span-2 text-gray-800 font-medium">
+              <p>Features</p>
+            </div>
+            <li class="flex items-center gap-5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Curabitur faucibus</span>
+            </li>
+            <!-- Repeat feature items -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+<script src="/src/scripts/head.js" defer></script>
+<script>
+  const testimonials = document.querySelectorAll('.testimonial');
+const buttons = document.querySelectorAll('button');
+
+function showTestimonial(index) {
+  testimonials.forEach((testimonial, i) => {
+    if (i === index) {
+      testimonial.classList.remove('hidden');
+      testimonial.classList.add('active');
+      buttons[i].classList.remove('bg-gray-300');
+      buttons[i].classList.add('bg-primary-600');
+    } else {
+      testimonial.classList.add('hidden');
+      testimonial.classList.remove('active');
+      buttons[i].classList.add('bg-gray-300');
+      buttons[i].classList.remove('bg-primary-600');
+    }
+  });
+}
+
+</script>
+</body>
+</html>
+
+
+
+
